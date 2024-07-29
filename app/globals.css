@@ -1,0 +1,41 @@
+@import url("https://api.fontshare.com/v2/css?f[]=author@200,201,300,301,400,401,500,501,600,601,700,701&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-[#FAFAFA] overflow-x-hidden
+  }
+}
+
+
+.author-extralight {
+  font-family: 'Author', sans-serif;
+  font-weight: 200;
+}
+.author-light {
+  font-family: 'Author', sans-serif;
+  font-weight: 300;
+}
+.author-regular {
+  font-family: 'Author', sans-serif;
+  font-weight: 400;
+}
+.author-medium {
+  font-family: 'Author', sans-serif;
+  font-weight: 500;
+}
+.author-semibold {
+  font-family: 'Author', sans-serif;
+  font-weight: 600;
+}
+.author-bold {
+  font-family: 'Author', sans-serif;
+  font-weight: 700;
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.2);
+}
