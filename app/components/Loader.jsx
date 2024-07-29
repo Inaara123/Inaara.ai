@@ -1,5 +1,5 @@
-import React from 'react'
-import {animate, motion} from 'framer-motion';
+import React from 'react';
+import { animate, motion } from 'framer-motion';
 
 const Loader = () => {
 
@@ -17,37 +17,33 @@ const Loader = () => {
         initial: {
             top: 0,
         },
-        enter:(i) =>(
-            {
-                top: "100%",
-                transition: {
-                    duration: 0.4,
-                    delay: 0.05 * i
-                },
-                TransitionEnd: {
-                    height: 0
-                }
+        enter: (i) => ({
+            top: "100%",
+            transition: {
+                duration: 0.4,
+                delay: 0.05 * i
+            },
+            transitionEnd: {
+                height: 0
             }
-        ),
-        exit: (i)=> (
-            {
-                height: "100%",
-                transition: {
-                    duration: 0.4,
-                    delay: 0.05 * i
-                },
-            }
-        )
+        }),
+        exit: (i) => ({
+            height: "100%",
+            transition: {
+                duration: 0.4,
+                delay: 0.05 * i
+            },
+        })
     }
 
     const columns = 5;
 
     return (
         <div className='z-[999] relative'>
-            <div className='h-screen w-screen fixed top-0 left-0 pointer-events-none flex '>
+            <div className='h-screen w-screen fixed top-0 left-0 pointer-events-none flex'>
                 {
                     [...Array(columns)].map((_, i) => {
-                        return <motion.div {...anim(expand, columns - i)} className='h-full w-full bg-white relative'/>
+                        return <motion.div key={i} {...anim(expand, columns - i)} className='h-full w-full bg-white relative' />
                     })
                 }
             </div>
@@ -55,4 +51,4 @@ const Loader = () => {
     )
 }
 
-export default Loader
+export default Loader;

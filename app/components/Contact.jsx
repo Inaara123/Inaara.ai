@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <div className=' mb-20 mt-32 px-20'>
-        <h1 className='text-6xl author-semibold'>Let's have a talk</h1>
+        <h1 className='text-6xl author-semibold'>Let&apos;s have a talk</h1>
         <p className='author-medium text-2xl text-gray-600'>Get in touch with us</p>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
