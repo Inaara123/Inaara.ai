@@ -96,40 +96,40 @@ const TestimonialsCarousel = () => {
   };
 
   return (
-    <div className="py-12 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-        <h2 className="text-6xl font-extrabold mb-8 author-bold">Client Diary</h2>
-        <p className='absolute right-0 bottom-4 pr-28 text-lg author-regular'>Slide to explore...</p>
-        <Slider ref={sliderRef} {...settings}>
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              className="px-2 h-[60vh]"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="bg-[#e8eef0] text-black p-6 rounded-3xl shadow-md h-full flex flex-col justify-between border-2 border-[#c2c8d3] cursor-grab active:cursor-grabbing active:scale-90 transition-transform duration-500">
-                <p className="text-4xl font-bold mb-4">{testimonial.review}</p>
-                <div className="flex items-center">
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    width={50}
-                    height={50}
-                    className="rounded-full"
-                  />
-                  <div className="ml-4">
-                    <p className="text-2xl font-semibold">{testimonial.name}</p>
-                    <p className="text-md text-slate-600">{testimonial.title}</p>
-                  </div>
-                </div>
+    <div className="py-12 relative mt-60">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-20">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 md:mb-8 author-bold">Client Diary</h2>
+    <p className='absolute right-0 bottom-4 pr-4 sm:pr-8 md:pr-16 lg:pr-28 text-sm sm:text-base md:text-lg author-regular'>Slide to explore...</p>
+    <Slider ref={sliderRef} {...settings}>
+      {testimonials.map((testimonial, index) => (
+        <motion.div
+          key={index}
+          className="px-2 h-[40vh] sm:h-[50vh] md:h-[60vh]"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="bg-[#e8eef0] text-black p-4 sm:p-5 md:p-6 rounded-3xl shadow-md h-full flex flex-col justify-between border-2 border-[#c2c8d3] cursor-grab active:cursor-grabbing active:scale-90 transition-transform duration-500">
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4">{testimonial.review}</p>
+            <div className="flex items-center">
+              <Image
+                src={testimonial.image}
+                alt={testimonial.name}
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <div className="ml-2 sm:ml-3 md:ml-4">
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold">{testimonial.name}</p>
+                <p className="text-sm sm:text-base md:text-md text-slate-600">{testimonial.title}</p>
               </div>
-            </motion.div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </Slider>
+  </div>
+</div>
   );
 };
 

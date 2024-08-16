@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className="h-[100vh] bg-black">
       <div className="h-full w-full flex items-center justify-center">
-        <h1 className="text-9xl text-white author-medium flex space-x-2 cursor-pointer">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-white author-medium flex space-x-2 cursor-pointer">
           {text.split('').map((char, index) => (
             <motion.span
               key={index}

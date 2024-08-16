@@ -17,9 +17,9 @@ const imageVariants = {
 
 const Video = () => {
   return (
-    <div className='mx-20 h-screen relative flex items-center justify-center'>
-      <div className='h-5/6 w-5/6 border-2 border-gray-700 rounded-3xl overflow-hidden translate-x-20 skew-x-[32deg] p-2'>
-        <div className='h-full w-full flex items-center justify-center'>
+    <div className='mx-4 sm:mx-10 md:mx-20 h-screen relative flex items-center justify-center'>
+    <div className='h-4/6 sm:h-5/6 w-full sm:w-5/6 border-2 border-gray-700 rounded-3xl overflow-hidden translate-x-0 sm:translate-x-10 md:translate-x-20 skew-x-0 sm:skew-x-[32deg] p-2'>
+      <div className='h-full w-full flex items-center justify-center'>
         <motion.div initial="hidden" whileInView="visible" className="relative">
           <motion.div custom={0} variants={imageVariants}>
             <Image
@@ -33,7 +33,7 @@ const Video = () => {
           <motion.div
             custom={1}
             variants={imageVariants}
-            className="absolute right-0 top-24"
+            className="absolute right-0 top-12 sm:top-24"
           >
             <Image
               src="/images/Frame 251.svg"
@@ -44,9 +44,9 @@ const Video = () => {
             />
           </motion.div>
         </motion.div>
-        </div>
       </div>
     </div>
+  </div>
   );
 };
 
