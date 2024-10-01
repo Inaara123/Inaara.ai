@@ -46,7 +46,73 @@ const Footer = () => {
           ))}
         </h1>
       </div>
+      <footer className="bg-gray-900 text-white py-8">
+      <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Column 1: About */}
+            <div>
+              <h2 className="text-xl font-bold mb-4">About Us</h2>
+              <p className="text-gray-400">
+              Inaara.ai is dedicated to providing cutting-edge software solutions 
+                for hospitals, enhancing the efficiency of patient management and offering 
+                insights for better healthcare operations.
+              </p>
+            </div>
+            {/* Column 2: Services */}
+            <div>
+              <h2 className="text-xl font-bold mb-4">Our Services</h2>
+              <ul className="text-gray-400">
+                <li className="mb-2">
+                  <span className="text-white font-semibold">Patient Queue Display:</span> 
+                  Real-time patient queue display on Android TVs for hospitals.
+                </li>
+                <li className="mb-2">
+                  <span className="text-white font-semibold">Patient Insights:</span> 
+                  Comprehensive dashboard for tracking and analyzing patient data.
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Contact */}
+            <div>
+              <h2 className="text-xl font-bold mb-4">Contact Us</h2>
+              <ul>
+                <li className="mb-2 text-gray-400">
+                  Email: tech@inaara.ai
+                </li>
+                <li className="mb-2 text-gray-400">
+                  Phone: +91-8106134951
+                </li>
+                <li className="mb-2 text-gray-400">
+                  Address: Church road, HUDA Colony,Hyderabad,India
+                </li>
+              </ul>
+            </div>
+
+             {/* Column 4: Links */}
+             <div>
+              <h2 className="text-xl font-bold mb-4">Links</h2>
+              <ul>
+                <li className="mb-2">
+                  <a href="https://inaara-mmxqzjxi7-inaaras-projects.vercel.app/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a>
+                </li>
+                <li className="mb-2">
+                  <a href="http://localhost:3000/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
+                </li>
+                <li className="mb-2">
+                  <a href="http://localhost:3000/cancellation-refund" className="text-gray-400 hover:text-white">Cancellation and Refund</a>
+                </li>
+                <li className="mb-2">
+                  <a href="http://localhost:3000/shipping-delivery" className="text-gray-400 hover:text-white">Shipping and Delivery</a>
+                </li>
+              </ul>
+            </div>
+            
+            </div>
+            </div>
+      </footer>
     </div>
+    
   );
 };
 
