@@ -97,7 +97,7 @@ const Footer = () => {
                   <a href="https://inaara-mmxqzjxi7-inaaras-projects.vercel.app/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a>
                 </li>
                 <li className="mb-2">
-                  <a href="http://localhost:3000/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
+                  <a href="https://inaara-mmxqzjxi7-inaaras-projects.vercel.app/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
                 </li>
                 <li className="mb-2">
                   <a href="http://localhost:3000/cancellation-refund" className="text-gray-400 hover:text-white">Cancellation and Refund</a>
