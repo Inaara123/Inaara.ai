@@ -94,10 +94,10 @@ const Footer = () => {
               <h2 className="text-xl font-bold mb-4">Links</h2>
               <ul>
                 <li className="mb-2">
-                  <a href="https://inaara-mmxqzjxi7-inaaras-projects.vercel.app/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a>
+                  <a href="https://inaara.ai/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a>
                 </li>
                 <li className="mb-2">
-                  <a href="https://inaara-mmxqzjxi7-inaaras-projects.vercel.app/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
+                  <a href="https://inaara.ai/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
                 </li>
                 <li className="mb-2">
                   <a href="http://localhost:3000/cancellation-refund" className="text-gray-400 hover:text-white">Cancellation and Refund</a>
