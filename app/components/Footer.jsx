@@ -100,10 +100,10 @@ const Footer = () => {
                   <a href="https://inaara.ai/terms-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a>
                 </li>
                 <li className="mb-2">
-                  <a href="http://localhost:3000/cancellation-refund" className="text-gray-400 hover:text-white">Cancellation and Refund</a>
+                  <a href="https://inaara.ai/cancellation" className="text-gray-400 hover:text-white">Cancellation and Refund</a>
                 </li>
                 <li className="mb-2">
-                  <a href="http://localhost:3000/shipping-delivery" className="text-gray-400 hover:text-white">Shipping and Delivery</a>
+                  <a href="https://inaara.ai/shipping-delivery" className="text-gray-400 hover:text-white">Shipping and Delivery</a>
                 </li>
               </ul>
             </div>
