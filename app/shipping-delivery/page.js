@@ -19,7 +19,7 @@ const ShippingDeliveryPolicy = () => {
           <section>
             <h2 className="text-xl font-semibold mb-2">2. Access and Activation</h2>
             <p>
-              Once the app is downloaded from the Play Store or App Store, and the payment is confirmed, you will be granted full access to the product's features.
+              Once the app is downloaded from the Play Store or App Store, and the payment is confirmed, you will be granted full access to the product&apos;s features.
               Access credentials, if required, will be provided instantly upon successful payment.
             </p>
           </section>
