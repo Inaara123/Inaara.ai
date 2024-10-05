@@ -1,0 +1,73 @@
+/* About.css */
+.about-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .who-we-are,
+  .our-mission,
+  .what-we-do,
+  .values,
+  .cta-section,
+  .contact-section {
+    margin: 40px 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 40px;
+  }
+  
+  .section-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  .cta-section {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .contact-section {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-section a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
