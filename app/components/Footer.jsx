@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
+import { FaFacebookF,FaInstagram,FaTwitter } from 'react-icons/fa';
 const Footer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -52,12 +52,27 @@ const Footer = () => {
             {/* Column 1: About */}
             <div>
               <h2 className="text-xl font-bold mb-4">About Us</h2>
-              <p className="text-gray-400">
-              Inaara.ai is dedicated to providing cutting-edge software solutions 
-                for hospitals, enhancing the efficiency of patient management and offering 
-                insights for better healthcare operations.
+              <p>
+              <a href="http://localhost:3000/aboutus" className="text-gray-400 hover:text-white">
+          Visit our About Us page 
+        </a>
               </p>
+             <div className="mt-4">
+             <h2 className="text-xl font-bold mb-4">Follow us on Social Media</h2>
+             <div className="flex space-x-4">
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">
+          <FaFacebookF size={24} />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">
+          <FaInstagram size={24} />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">
+          <FaTwitter size={24} />
+        </a>
+        </div>
+      </div>
             </div>
+           
             {/* Column 2: Services */}
             <div>
               <h2 className="text-xl font-bold mb-4">Our Services</h2>
