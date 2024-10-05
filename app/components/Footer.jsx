@@ -53,7 +53,7 @@ const Footer = () => {
             <div>
               <h2 className="text-xl font-bold mb-4">About Us</h2>
               <p>
-              <a href="http://localhost:3000/aboutus" className="text-gray-400 hover:text-white">
+              <a href="https://inaara.ai/aboutus" className="text-gray-400 hover:text-white">
           Visit our About Us page 
         </a>
               </p>
