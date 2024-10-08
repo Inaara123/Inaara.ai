@@ -67,7 +67,7 @@ const formActionURL = `https://docs.google.com/forms/d/e/${formID}/formResponse`
   const handleFormSubmit = (event) => {
     console.log('handling submit');
     event.preventDefault(); // Prevent the default form submission
-    form.handleSubmit(onSubmit)(event); // Call the handleSubmit method with the onSubmit function
+    //form.handleSubmit(onSubmit)(event); // Call the handleSubmit method with the onSubmit function
     onsubmit(event);
   };
   return (
