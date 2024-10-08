@@ -107,7 +107,7 @@ const formActionURL = `https://docs.google.com/forms/d/e/${formID}/formResponse`
             {...form.register("message")}
           />
         </div>
-        <button type='submit' className='border-2 border-white px-4 py-1 rounded-full mt-2 relative flex gap-2 items-center justify-center overflow-hidden group' >Send
+        <button type='submit' className='border-2 border-white px-4 py-1 rounded-full mt-2 relative flex gap-2 items-center justify-center overflow-hidden group' >
           <div className='relative z-10 flex items-center justify-center'>
             <h1 className='author-bold group-hover:-translate-y-10 text-base sm:text-lg group-hover:text-white transition-all duration-500 z-10'>Send</h1>
             <h1 className='absolute translate-y-7 group-hover:translate-y-0 author-bold text-base sm:text-lg group-hover:text-black transition-all duration-500 z-10'>Send</h1>
