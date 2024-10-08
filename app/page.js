@@ -10,7 +10,7 @@ import TestimonialsCarousel from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Loader from "./components/Loader";
 import Footer from "./components/Footer";
-
+import Inaara from "./components/Inaara";
 export default function Home() {
 
   useEffect(() => {
@@ -32,6 +32,7 @@ export default function Home() {
       <OurApps/>
       <TestimonialsCarousel/>
       <Contact/>
+      <Inaara/>
       <Footer/>
     </main>
   );
