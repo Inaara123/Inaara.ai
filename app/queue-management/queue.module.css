@@ -1,0 +1,87 @@
+/* Main style alignment based on the website's theme */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #2B2D47; /* Dark background to match theme */
+  color: #fff; /* White text to contrast background */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Large bold heading */
+  font-weight: 700;
+  color: #4DB4F9; /* Matching blue from main site */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem; /* Slightly smaller description text */
+  font-weight: 300;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.tvImage {
+  max-width: 80%;
+  width: auto;
+  max-height: 350px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for image */
+}
+
+.howItWorks {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff; /* White background for contrast */
+  color: #0A0C22; /* Dark text to match overall theme */
+}
+
+.howItWorks h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4DB4F9; /* Same blue accent */
+  margin-bottom: 20px;
+}
+
+.howItWorks p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.features {
+  padding: 50px 20px;
+  background-color: #F4F7FF; /* Light background similar to the theme */
+  color: #0A0C22;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4DB4F9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.features li {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Subtle separator */
+  line-height: 1.7;
+  color: #0A0C22;
+}
