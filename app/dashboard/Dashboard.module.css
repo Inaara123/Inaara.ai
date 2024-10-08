@@ -1,0 +1,40 @@
+/* Dashboard.module.css */
+
+.dashboardContainer {
+    background-color: #0A0C22; /* Dark background */
+    color: white; /* White text */
+    min-height: 100vh; /* Full height */
+    /* Padding around the content */
+  }
+  
+  .dashboardHeading {
+    text-align: center; /* Center text */
+    margin-bottom: 2.5rem; /* Bottom margin */
+    padding: 100px 20px 20px;
+  }
+  
+  .dashboardImage {
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);/* Soft shadow */
+  }
+  
+  .dashboardDescription {
+    margin: auto; /* Center */
+    max-width: 800px; /* Maximum width */
+    text-align: center; /* Center text */
+    padding: 20px 0 100px;
+  }
+  
+  .dashboardList {
+    list-style-type: disc; /* Disc style for list */
+    margin: 1.5rem auto; /* Margin for the list */
+    text-align: left; /* Left-align text */
+    padding-left: 1.5rem; /* Padding for list items */
+  }
+  
+  .dashboardListItem {
+    margin-bottom: 1rem; /* Margin between list items */
+  }
+  
+  
+  
