@@ -1,0 +1,40 @@
+/* AIInsights.module.css */
+
+.container {
+    background-color: #0A0C22; /* Background color */
+    color: white; /* Text color */
+    min-height: 100vh; /* Minimum height */
+}
+
+.heading {
+    text-align: center; /* Center text */
+    margin-bottom: 2.5rem; /* Bottom margin */
+    padding:100px 20px 10px; /* Add some padding above, use a reasonable value */
+    font-family: 'YourMainFont', sans-serif; /* Ensure this matches your main site's font */
+    font-size: 2.5rem; /* Font size for heading */
+}
+
+.subheading {
+    font-size: 1.125rem; /* Font size for subheading */
+    font-family: 'YourMainFont', sans-serif; /* Consistent font */
+}
+
+.imageSection {
+    display: flex; /* Flex layout */
+    justify-content: center; /* Centering */
+    margin-bottom: 2.5rem; /* Bottom margin */
+}
+
+.explanation {
+    max-width: 48rem; /* Max width */
+    margin: 0 auto; /* Centering */
+    text-align: center; /* Center text */
+    padding-bottom: 80px;
+}
+
+.listItem {
+    text-align: left; /* Left align list items */
+    font-size: 1rem; /* Font size */
+    line-height: 1.5; /* Line height */
+    font-family: 'YourMainFont', sans-serif; /* Consistent font */
+}
