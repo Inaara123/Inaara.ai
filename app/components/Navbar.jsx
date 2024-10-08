@@ -37,6 +37,13 @@ const Navbar = () => {
         visible: { opacity: 1, y: 0, x: 0 },
     };
 
+    const openWhatsApp = () => {
+        const phoneNumber = "+918106134951"; // Replace with the WhatsApp number you want to use
+        const message = "Hello, I'm interested in learning more about your services."; // Pre-filled message
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.location.href = whatsappUrl;
+    };
+
     return (
         <div>
     <section className='fixed w-full px-4 sm:px-10 md:px-20 pb-6 z-50'>
@@ -52,7 +59,8 @@ const Navbar = () => {
                 </div>
             </div> */}
         </div>
-        <button className={`border-[1.5px] border-white hover:border-[#23c989] px-4 py-2 rounded-full absolute right-4 sm:right-10 md:right-36 top-6 transition-all duration-500 ease-in-out ${isActive ? 'opacity-0' : 'opacity-100'} z-10 group overflow-hidden flex items-center justify-center `}>
+        
+        <button onClick={openWhatsApp} className={`border-[1.5px] border-white hover:border-[#23c989] px-4 py-2 rounded-full absolute right-4 sm:right-10 md:right-36 top-6 transition-all duration-500 ease-in-out ${isActive ? 'opacity-0' : 'opacity-100'} z-10 group overflow-hidden flex items-center justify-center `}>
             <div className='overflow-hidden relative flex items-center justify-center'>
                 <h1 className='author-medium text-lg sm:text-xl group-hover:-translate-y-10 transition-all duration-500'>Contact us</h1>
                 {/* <h1 className='author-medium text-xl absolute group-hover:-translate-y-7 translate-y-0 transition-all duration-500'>Whatsapp</h1> */}
