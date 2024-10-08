@@ -1,8 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import lottie from 'lottie-web';
+import { useRouter } from 'next/navigation';
 
 const Hero = () => {
+  const router = useRouter();
+  const handleButtonClick = (path) => {
+    router.push(path);  // Use router.push to navigate to the desired path
+};
+
   return (
     <div className='h-screen mx-4 sm:mx-10 md:mx-20 pt-10 sm:pt-20 flex flex-col gap-4 sm:gap-8 items-center justify-center text-center'>
   <div className='flex flex-col gap-1 sm:gap-2'>
@@ -18,7 +24,7 @@ const Hero = () => {
     </p>
   </div>
   <div className='flex flex-col sm:flex-row gap-4 sm:gap-10'>
-    <button className='border-2 border-white rounded-full px-2 sm:px-4 py-1 sm:py-2 flex items-center justify-center gap-2 group relative overflow-hidden hover:border-[#5226f3] transition-all duration-500 ease-in'>
+    <button onClick={() => handleButtonClick('/products')} className='border-2 border-white rounded-full px-2 sm:px-4 py-1 sm:py-2 flex items-center justify-center gap-2 group relative overflow-hidden hover:border-[#5226f3] transition-all duration-500 ease-in'>
       <div className='overflow-hidden relative'>
         <h1 className='author-medium text-base sm:text-xl group-hover:-translate-y-10 transition-all duration-500'>
           View our Products
