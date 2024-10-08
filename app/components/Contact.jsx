@@ -57,9 +57,11 @@ const formActionURL = `https://docs.google.com/forms/d/e/${formID}/formResponse`
     })
     .then(() => {
       console.log('Form submitted successfully!');
+      alert('Form submitted successfully!');
     })
     .catch((error) => {
       console.error('Error submitting form:', error);
+      alert('Server error occured');
     });
   };
   const handleFormSubmit = (event) => {
