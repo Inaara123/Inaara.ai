@@ -11,8 +11,8 @@ const OurApps = () => {
     const [number, setNumber] = useState('');
     const [location, setLocation] = useState('');
     const [details, setDetails] = useState([
-        { name: 'John Doe', number: '9988776655', token: 101 },
-        { name: 'Amelia Smith', number: '1234567890', token: 102 },
+        { name: 'John Doe', number: '9988776655', token: 10 },
+        { name: 'Amelia Smith', number: '1234567890', token: 11},
     ]);
 
     const handleAddDetails = () => {
@@ -84,7 +84,7 @@ const OurApps = () => {
                 <div className='h-full w-full absolute rounded-full -z-10 bg-gradient-to-br from-purple-800/30 scale-[1.5]'/>
                 <AnimatePresence>
                     <div className='w-full flex items-center justify-between text-white'>
-                        <h1 className='w-1/4 author-medium flex items-center justify-center text-2xl'>Token Number</h1>
+                        <h1 className='w-1/4 author-medium flex items-center justify-center text-2xl'>Waiting Number</h1>
                         <h1 className='w-3/4 flex items-center justify-center text-2xl author-medium'>Name</h1>
                     </div>
                     {details.map((detail, index) => (
@@ -110,8 +110,8 @@ const OurApps = () => {
             <div className='h-[90%] w-[95%] bg-transparent border-2 border-gray-600 text-black rounded-3xl p-4 mt-4 relative overflow-hidden flex flex-col gap-4 items-center justify-center '>
                 <div className='h-full w-full absolute rounded-full -z-10 bg-gradient-to-br from-sky-800/30 scale-[1.5]'/>
                 <AnimatePresence>
-                    <h1 className='text-4xl author-bold text-gray-400'>Your token Number is</h1>
-                    <h1 className='font-bold text-white text-7xl'>103</h1>
+                    <h1 className='text-4xl author-bold text-gray-400'>Your Waiting Number is</h1>
+                    <h1 className='font-bold text-white text-7xl'>9</h1>
                     <p className='author-regular text-white '>Your estimated Time is : <span>12:30 PM</span></p>
                     <button className='bg-white px-4 py-2 rounded-xl'>
                         <h1 className='author-regular text-xl'>Set a Reminder</h1>
